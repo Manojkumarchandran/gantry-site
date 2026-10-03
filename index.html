@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-t="d">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gantry | Software services and products</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Caveat:wght@600&family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500&family=Source+Sans+3:wght@400;600&family=Space+Grotesk:wght@500;700&family=Archivo:wght@500;800&family=JetBrains+Mono:wght@500;700&family=Bitter:wght@500;700&family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+[data-t="d"]{--bg:#F4EFFA;--ink:#2A1F4D;--mute:#5E5483;--line:#DDD5EF;--card:#fff;--ac:#6B4EFF;--hot:#FF7F9C;--hf:"Plus Jakarta Sans",system-ui,sans-serif;--bf:"Plus Jakarta Sans",system-ui,sans-serif}
+[data-t="d"] body{background-image:radial-gradient(600px 320px at 92% 0,#FFD9E0,transparent),radial-gradient(520px 320px at 0 18%,#D9D3FF,transparent);background-repeat:no-repeat}
+[data-t="d"] .btn{border-radius:16px;box-shadow:0 8px 20px rgba(107,78,255,.28)}
+[data-t="d"] .btn.ghost{box-shadow:none;border-color:var(--ac);color:var(--ac)}
+[data-t="d"] .c{background:#fff;border-radius:28px;box-shadow:0 10px 30px rgba(42,31,77,.1)}
+[data-t="d"] .tag{border-radius:999px}
+
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--bf)}
+h1,h2,h3{font-family:var(--hf);line-height:1.08;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{display:flex;align-items:center;gap:9px;font:800 23px var(--hf);text-decoration:none}
+nav a{margin-left:20px;padding:4px 2px;display:inline-block;text-decoration:none;font-weight:500;background:linear-gradient(var(--hot),var(--hot)) left 100%/0 3px no-repeat;transition:background-size .35s,transform .25s}
+nav a:hover,nav a:focus-visible{background-size:100% 3px;transform:translateY(-2px) rotate(-1.5deg)}
+@media(prefers-reduced-motion:reduce){nav a{transition:none}nav a:hover{transform:none}}
+.hi{display:none;font:600 30px Caveat,cursive;color:var(--hot);transform:rotate(-3deg);margin-bottom:6px}
+.hero{padding:44px 0 26px}
+.hero h1{font-size:clamp(40px,8vw,82px);font-weight:800;letter-spacing:-.03em;max-width:12ch}
+.hero p{max-width:50ch;color:var(--mute);font-size:19px;margin:22px 0 28px}
+.btn{display:inline-block;padding:13px 24px;font-weight:600;text-decoration:none;margin:0 10px 10px 0;background:var(--ac);color:#fff}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink);box-shadow:none}
+.path{display:block;width:100%;height:auto;margin-top:20px}
+.path text{font:600 34px Caveat,cursive;fill:var(--hot)}
+section{padding:60px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(30px,5vw,46px);letter-spacing:-.02em;margin-bottom:12px;max-width:18ch}
+.lead{color:var(--mute);max-width:54ch;margin:0 0 30px}
+.svcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:16px}
+.c{padding:24px}
+.c h3{font-size:23px;margin-bottom:6px}.c p{margin:0;color:var(--mute);font-size:16px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.tag{display:inline-block;background:var(--hot);color:#111;font-weight:600;font-size:14px;padding:3px 12px;margin-bottom:14px}
+.steps{list-style:none;padding:0;margin:0;border-left:3px solid var(--ink)}
+.steps li{padding:0 0 20px 24px;position:relative}
+.steps li::before{content:"";position:absolute;left:-9px;top:8px;width:15px;height:15px;background:var(--hot);border-radius:50%}
+.steps b{font:700 20px var(--hf);display:block}.steps span{color:var(--mute)}
+.mail{font:700 clamp(24px,5vw,44px) var(--hf);color:var(--ac);word-break:break-all}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--mute);font-size:15px}
+@media(max-width:760px){.split{grid-template-columns:1fr}nav a{margin-left:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#top"><svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="var(--ac)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 36V8h24v28M8 22h24M8 36l24-14"/><circle cx="20" cy="8" r="4.5" fill="var(--hot)" stroke="none"/></svg>Gantry</a>
+  <nav><a href="#services">Services</a><a href="#products">Products</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+</header>
+<main id="top">
+<div class="hero">
+  <h1>We build the frame. You launch.</h1>
+  <p>We're a small software studio in Theni. We build websites, apps and business software, and turn what we keep rebuilding for clients into products of our own.</p>
+  <a class="btn" href="#contact">Start a project</a><a class="btn ghost" href="#products">Our products</a>
+  <svg class="path" viewBox="0 0 1000 120" aria-hidden="true"><path d="M0 112C300 112 520 100 700 60S900 12 960 14" stroke="var(--ac)" stroke-width="3" fill="none" stroke-dasharray="3 12" stroke-linecap="round"/><circle cx="968" cy="14" r="12" fill="var(--hot)"/><text x="690" y="104" transform="rotate(-4 690 104)">that's you, launching</text></svg>
+</div>
+<section id="services">
+  <h2>What we can build for you</h2>
+  <p class="lead">Fixed price or a monthly team. You see working software every week and the code is yours.</p>
+  <div class="svcs">
+    <div class="c"><h3>Websites</h3><p>Fast on a phone, easy to find on Google, easy for you to edit.</p></div>
+    <div class="c"><h3>Apps</h3><p>Android, iOS and web, built around the one screen your customers use most.</p></div>
+    <div class="c"><h3>Business software</h3><p>Billing, stock, attendance and records that replace Excel sheets and notebooks.</p></div>
+    <div class="c"><h3>AI automation</h3><p>WhatsApp replies, invoice reading and daily reports on autopilot.</p></div>
+  </div>
+</section>
+<section id="products">
+  <div class="split">
+    <div><span class="tag">In development</span><h2>Our own products</h2><p class="lead">Every product starts as a problem we solved for more than one client. We're looking for a few shops to try the first one.</p><a class="btn" href="mailto:hello@gantrylabs.in?subject=Pilot">Join the pilot</a></div>
+    <div class="c pc"><h3>Gantry Billing</h3><p>Simple GST billing and stock tracking for small shops. Free while we test it. Replace with your real product idea.</p></div>
+  </div>
+</section>
+<section id="process">
+  <h2>How we work</h2>
+  <p class="lead">No surprises. You always know what we're building and what it costs.</p>
+  <ol class="steps">
+    <li><b>Talk</b><span>A free call. You tell us what's stuck.</span></li>
+    <li><b>Plan</b><span>Written scope and a fixed price. Nothing starts until you say yes.</span></li>
+    <li><b>Build</b><span>Weekly demos, so you can change your mind early.</span></li>
+    <li><b>Launch</b><span>We go live, train your team and stay around for fixes.</span></li>
+  </ol>
+</section>
+<section id="contact">
+  <h2>Got something stuck? Tell us.</h2>
+  <p class="lead">A short note is enough. We usually reply within a working day.</p>
+  <a class="mail" href="mailto:hello@gantrylabs.in">hello@gantrylabs.in</a>
+  <p style="margin-top:16px"><a class="btn" href="https://wa.me/9342472610">WhatsApp us</a></p>
+</section>
+</main>
+<footer>&copy; 2026 Gantry. Made in Theni, Tamil Nadu.</footer>
+</div>
+</body>
+</html>
